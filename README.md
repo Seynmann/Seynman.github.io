@@ -1,1 +1,1 @@
-# Seynman.github.io
+# Seynmann.github.io
