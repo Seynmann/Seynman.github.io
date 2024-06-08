@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>十万个为什么之地图篇</title>
+    <link rel="stylesheet" href="style_index.css">
+    <style>
+        .qna-section {
+            background-color: #f0f8ff; /* 浅蓝色背景 */
+            padding: 40px 20px; /* 上下边距40px，左右边距20px */
+            margin: 20px 0; /* 上下边距20px */
+        }
+        .qna-section button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+        }
+        .qna-section .answer {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>地图那些事儿</h1>
+        <ul>
+            <li><a href="./map_beau.html">地图之美</a></li>
+            <li><a href="./map_know.html">地图知识</a></li>
+            <li><a href="./webinfo.html">关于本站</a></li>
+            <li><a href="./index.html">回到首页</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="news">
+            <h2>十万个为什么之地图篇</h2>
+            <p>stay hungry, stay foolish!</p>
+            <p><a href="#">了解更多</a></p>
+        </section>
+
+        <section class="qna-section">
+            <h2>常见问题</h2>
+            <button onclick="toggleAnswer('answer1')">为什么世界地图上的各大洲看起来大小差异那么大？</button>
+            <div id="answer1" class="answer">
+                <p>这是由于地球的三维形状与平面地图的二维呈现之间的转换所导致的失真问题。<br>地球是一个近乎球体的椭球体，而平面地图是将这个球体展开成平面的投影。<br>由于无法完美将球体展开到平面上，投影过程中会出现形状、面积和方向的失真。<br>常见的墨卡托投影是一种等角投影，保持角度不变，但面积和形状可能会失真。<br>这就导致了在地图上靠近极地的地区被过度扩大，而赤道附近的地区则相对缩小，从而造成了各大洲在地图上看起来大小差异较大的情况。</p>
+            </div>
+
+            <button onclick="toggleAnswer('answer2')">为什么航班上飞机飞行的路线看起来不是直线？</button>
+            <div id="answer2" class="answer">
+                <p>航线通常采用的是大圆航线而非直线。大圆航线是连接两点之间在球体表面上最短的路径。<br>虽然在球体表面上这条线是一条直线，但在平面地图上投影出来可能会呈现出曲线形状。<br>这是因为地球是一个球体，而航线是在地球表面上进行规划的。航班规划考虑到地球的曲率，选择大圆航线可以节省燃料和时间。<br>因此，即使在平面地图上看起来是曲线，飞机实际上是按照直线飞行的。</p>
+            </div>
+
+            <button onclick="toggleAnswer('answer3')">为什么地图上经常会看到标注北方或南方的箭头？</button>
+            <div id="answer3" class="answer">
+                <p>这些箭头是用来表示地图的方向，即地图上的北方或南方。<br>地图是一种平面表达方式，但地球是一个球体，没有固定的上下方向。为了确保观察者能够正确理解地图上的空间关系，<br>地图制作者通常会在地图上标注方向指示箭头，以指示地图的方位，帮助人们进行导航和理解地图上的位置关系。</p>
+            </div>
+
+            <button onclick="toggleAnswer('answer4')">为什么地图上的比例尺对于不同地区可能会有所不同？</button>
+            <div id="answer4" class="answer">
+                <p>地图上的比例尺表示地图上的距离与实际距离之间的比例关系。<br>由于地球表面的曲率，不同地区的地图上的比例尺可能会有所不同。比例尺通常是在地图上指定的，以帮助读者理解地图上的距离关系。<br>较大比例尺的地图通常显示更多的细节，但覆盖的区域更小；而较小比例尺的地图则覆盖范围更广，但细节可能会减少。<br>因此，比例尺的选择取决于地图的使用目的和所需的精度。</p>
+            </div>
+        </section>
+
+        <section class="slogan">
+            <blockquote>"当坚冰还盖着北海的时候，<br>我看到了怒放的梅花。"</blockquote>
+        </section>
+
+        <section class="shop">
+            <img src="./img/05.png" alt="mapcartoon">
+            <div class="info">
+                <h2>本网站2024.05正式开张！</h2>
+                <p>路漫漫其修远<br>吾将上下而求索</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 Seynman All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
